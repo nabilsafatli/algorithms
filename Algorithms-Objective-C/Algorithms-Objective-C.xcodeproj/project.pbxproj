@@ -15,6 +15,7 @@
 		FBF41C102376D1F200D2CA6A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FBF41C0F2376D1F200D2CA6A /* main.m */; };
 		FBF41C1A2376D1F200D2CA6A /* Algorithms_Objective_CTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FBF41C192376D1F200D2CA6A /* Algorithms_Objective_CTests.m */; };
 		FBF41C272376D25300D2CA6A /* SockMerchant.m in Sources */ = {isa = PBXBuildFile; fileRef = FBF41C262376D25300D2CA6A /* SockMerchant.m */; };
+		FBF41C2F2376D3DB00D2CA6A /* CountingValleys.m in Sources */ = {isa = PBXBuildFile; fileRef = FBF41C2D2376D3DB00D2CA6A /* CountingValleys.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +44,8 @@
 		FBF41C1B2376D1F200D2CA6A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FBF41C252376D25300D2CA6A /* SockMerchant.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SockMerchant.h; sourceTree = "<group>"; };
 		FBF41C262376D25300D2CA6A /* SockMerchant.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SockMerchant.m; sourceTree = "<group>"; };
+		FBF41C2D2376D3DB00D2CA6A /* CountingValleys.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CountingValleys.m; sourceTree = "<group>"; };
+		FBF41C2E2376D3DB00D2CA6A /* CountingValleys.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CountingValleys.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,10 +113,28 @@
 		FBF41C242376D21500D2CA6A /* Challenges */ = {
 			isa = PBXGroup;
 			children = (
+				FBF41C2C2376D3DB00D2CA6A /* CountingValleys */,
+				FBF41C282376D3A300D2CA6A /* SockMerchant */,
+			);
+			path = Challenges;
+			sourceTree = "<group>";
+		};
+		FBF41C282376D3A300D2CA6A /* SockMerchant */ = {
+			isa = PBXGroup;
+			children = (
 				FBF41C252376D25300D2CA6A /* SockMerchant.h */,
 				FBF41C262376D25300D2CA6A /* SockMerchant.m */,
 			);
-			path = Challenges;
+			path = SockMerchant;
+			sourceTree = "<group>";
+		};
+		FBF41C2C2376D3DB00D2CA6A /* CountingValleys */ = {
+			isa = PBXGroup;
+			children = (
+				FBF41C2E2376D3DB00D2CA6A /* CountingValleys.h */,
+				FBF41C2D2376D3DB00D2CA6A /* CountingValleys.m */,
+			);
+			path = CountingValleys;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -217,6 +238,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FBF41C052376D1F000D2CA6A /* ViewController.m in Sources */,
+				FBF41C2F2376D3DB00D2CA6A /* CountingValleys.m in Sources */,
 				FBF41C102376D1F200D2CA6A /* main.m in Sources */,
 				FBF41C022376D1F000D2CA6A /* AppDelegate.m in Sources */,
 				FBF41C272376D25300D2CA6A /* SockMerchant.m in Sources */,
