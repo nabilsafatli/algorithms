@@ -16,6 +16,7 @@
 		FBF41C1A2376D1F200D2CA6A /* Algorithms_Objective_CTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FBF41C192376D1F200D2CA6A /* Algorithms_Objective_CTests.m */; };
 		FBF41C272376D25300D2CA6A /* SockMerchant.m in Sources */ = {isa = PBXBuildFile; fileRef = FBF41C262376D25300D2CA6A /* SockMerchant.m */; };
 		FBF41C2F2376D3DB00D2CA6A /* CountingValleys.m in Sources */ = {isa = PBXBuildFile; fileRef = FBF41C2D2376D3DB00D2CA6A /* CountingValleys.m */; };
+		FBF41C332376D6CB00D2CA6A /* JumpingOnTheClouds.m in Sources */ = {isa = PBXBuildFile; fileRef = FBF41C322376D6CB00D2CA6A /* JumpingOnTheClouds.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,8 @@
 		FBF41C262376D25300D2CA6A /* SockMerchant.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SockMerchant.m; sourceTree = "<group>"; };
 		FBF41C2D2376D3DB00D2CA6A /* CountingValleys.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CountingValleys.m; sourceTree = "<group>"; };
 		FBF41C2E2376D3DB00D2CA6A /* CountingValleys.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CountingValleys.h; sourceTree = "<group>"; };
+		FBF41C312376D6CB00D2CA6A /* JumpingOnTheClouds.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JumpingOnTheClouds.h; sourceTree = "<group>"; };
+		FBF41C322376D6CB00D2CA6A /* JumpingOnTheClouds.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JumpingOnTheClouds.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +116,7 @@
 		FBF41C242376D21500D2CA6A /* Challenges */ = {
 			isa = PBXGroup;
 			children = (
+				FBF41C302376D6B600D2CA6A /* JumpingOnTheClouds */,
 				FBF41C2C2376D3DB00D2CA6A /* CountingValleys */,
 				FBF41C282376D3A300D2CA6A /* SockMerchant */,
 			);
@@ -135,6 +139,15 @@
 				FBF41C2D2376D3DB00D2CA6A /* CountingValleys.m */,
 			);
 			path = CountingValleys;
+			sourceTree = "<group>";
+		};
+		FBF41C302376D6B600D2CA6A /* JumpingOnTheClouds */ = {
+			isa = PBXGroup;
+			children = (
+				FBF41C312376D6CB00D2CA6A /* JumpingOnTheClouds.h */,
+				FBF41C322376D6CB00D2CA6A /* JumpingOnTheClouds.m */,
+			);
+			path = JumpingOnTheClouds;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -238,6 +251,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FBF41C052376D1F000D2CA6A /* ViewController.m in Sources */,
+				FBF41C332376D6CB00D2CA6A /* JumpingOnTheClouds.m in Sources */,
 				FBF41C2F2376D3DB00D2CA6A /* CountingValleys.m in Sources */,
 				FBF41C102376D1F200D2CA6A /* main.m in Sources */,
 				FBF41C022376D1F000D2CA6A /* AppDelegate.m in Sources */,
