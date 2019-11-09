@@ -14,6 +14,7 @@
 		FBF41C0D2376D1F200D2CA6A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBF41C0B2376D1F200D2CA6A /* LaunchScreen.storyboard */; };
 		FBF41C102376D1F200D2CA6A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FBF41C0F2376D1F200D2CA6A /* main.m */; };
 		FBF41C1A2376D1F200D2CA6A /* Algorithms_Objective_CTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FBF41C192376D1F200D2CA6A /* Algorithms_Objective_CTests.m */; };
+		FBF41C272376D25300D2CA6A /* SockMerchant.m in Sources */ = {isa = PBXBuildFile; fileRef = FBF41C262376D25300D2CA6A /* SockMerchant.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 		FBF41C152376D1F200D2CA6A /* Algorithms-Objective-CTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Algorithms-Objective-CTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBF41C192376D1F200D2CA6A /* Algorithms_Objective_CTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Algorithms_Objective_CTests.m; sourceTree = "<group>"; };
 		FBF41C1B2376D1F200D2CA6A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FBF41C252376D25300D2CA6A /* SockMerchant.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SockMerchant.h; sourceTree = "<group>"; };
+		FBF41C262376D25300D2CA6A /* SockMerchant.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SockMerchant.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +84,7 @@
 		FBF41BFF2376D1F000D2CA6A /* Algorithms-Objective-C */ = {
 			isa = PBXGroup;
 			children = (
+				FBF41C242376D21500D2CA6A /* Challenges */,
 				FBF41C002376D1F000D2CA6A /* AppDelegate.h */,
 				FBF41C012376D1F000D2CA6A /* AppDelegate.m */,
 				FBF41C032376D1F000D2CA6A /* ViewController.h */,
@@ -101,6 +105,15 @@
 				FBF41C1B2376D1F200D2CA6A /* Info.plist */,
 			);
 			path = "Algorithms-Objective-CTests";
+			sourceTree = "<group>";
+		};
+		FBF41C242376D21500D2CA6A /* Challenges */ = {
+			isa = PBXGroup;
+			children = (
+				FBF41C252376D25300D2CA6A /* SockMerchant.h */,
+				FBF41C262376D25300D2CA6A /* SockMerchant.m */,
+			);
+			path = Challenges;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -206,6 +219,7 @@
 				FBF41C052376D1F000D2CA6A /* ViewController.m in Sources */,
 				FBF41C102376D1F200D2CA6A /* main.m in Sources */,
 				FBF41C022376D1F000D2CA6A /* AppDelegate.m in Sources */,
+				FBF41C272376D25300D2CA6A /* SockMerchant.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
