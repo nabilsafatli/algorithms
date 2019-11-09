@@ -29,7 +29,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface JumpingOnTheClouds : NSObject
 
-- (NSNumber *) jumpingOnClouds:(NSArray *)c;
++ (NSNumber *) jumpingOnClouds:(NSArray *)c;
 
 @end
 

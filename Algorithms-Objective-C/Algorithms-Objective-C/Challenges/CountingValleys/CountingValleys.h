@@ -28,7 +28,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface CountingValleys : NSObject
 
-- (NSNumber *) countingValleys:(NSNumber *)n s:(NSString *)s;
++ (NSNumber *) countingValleys:(NSNumber *)n s:(NSString *)s;
 
 @end
 

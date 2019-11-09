@@ -10,7 +10,7 @@
 
 @implementation JumpingOnTheClouds
 
-- (NSNumber *) jumpingOnClouds:(NSArray *)c {
++ (NSNumber *) jumpingOnClouds:(NSArray *)c {
     int jumps = 0;
     for(int i = 1; i < c.count; i++) {
         if (i+1 == c.count) {

@@ -10,7 +10,7 @@
 
 @implementation SockMerchant
 
-- (NSNumber *) sockMerchant:(NSNumber *)n ar:(NSArray *)ar {
++ (NSNumber *) sockMerchant:(NSNumber *)n ar:(NSArray *)ar {
     NSMutableDictionary *socksGroups = [NSMutableDictionary new];
 
     for(int i = 0; i < ar.count; i++) {

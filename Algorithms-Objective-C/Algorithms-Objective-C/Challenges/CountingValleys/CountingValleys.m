@@ -10,7 +10,7 @@
 
 @implementation CountingValleys
 
-- (NSNumber *) countingValleys:(NSNumber *)n s:(NSString *)s {
++ (NSNumber *) countingValleys:(NSNumber *)n s:(NSString *)s {
     int valleyNumbers = 0;
     int seaLevel = 0;
     for (int i = 0; i < [s length]; i++) {

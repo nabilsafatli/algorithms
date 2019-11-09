@@ -21,7 +21,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface SockMerchant : NSObject
 
-- (NSNumber *) sockMerchant:(NSNumber *)n ar:(NSArray *)ar;
++ (NSNumber *) sockMerchant:(NSNumber *)n ar:(NSArray *)ar;
 
 @end
 
