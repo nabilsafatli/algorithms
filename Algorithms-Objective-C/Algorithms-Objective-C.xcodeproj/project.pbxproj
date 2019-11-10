@@ -11,6 +11,8 @@
 		FB858C12237857E800558D4F /* StairCase.m in Sources */ = {isa = PBXBuildFile; fileRef = FB858C11237857E800558D4F /* StairCase.m */; };
 		FB858C16237858DD00558D4F /* PlusMinus.m in Sources */ = {isa = PBXBuildFile; fileRef = FB858C15237858DD00558D4F /* PlusMinus.m */; };
 		FB858C1A23785A0900558D4F /* DiagonalDifference.m in Sources */ = {isa = PBXBuildFile; fileRef = FB858C1923785A0900558D4F /* DiagonalDifference.m */; };
+		FBF16E662378B1880014A641 /* MyQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = FBF16E652378B1880014A641 /* MyQueue.m */; };
+		FBF16E6A2378B2A20014A641 /* MyStack.m in Sources */ = {isa = PBXBuildFile; fileRef = FBF16E692378B2A20014A641 /* MyStack.m */; };
 		FBF41C022376D1F000D2CA6A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FBF41C012376D1F000D2CA6A /* AppDelegate.m */; };
 		FBF41C052376D1F000D2CA6A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBF41C042376D1F000D2CA6A /* ViewController.m */; };
 		FBF41C082376D1F000D2CA6A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBF41C062376D1F000D2CA6A /* Main.storyboard */; };
@@ -43,6 +45,10 @@
 		FB858C15237858DD00558D4F /* PlusMinus.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PlusMinus.m; sourceTree = "<group>"; };
 		FB858C1823785A0900558D4F /* DiagonalDifference.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DiagonalDifference.h; sourceTree = "<group>"; };
 		FB858C1923785A0900558D4F /* DiagonalDifference.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DiagonalDifference.m; sourceTree = "<group>"; };
+		FBF16E642378B1880014A641 /* MyQueue.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyQueue.h; sourceTree = "<group>"; };
+		FBF16E652378B1880014A641 /* MyQueue.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyQueue.m; sourceTree = "<group>"; };
+		FBF16E682378B2A20014A641 /* MyStack.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyStack.h; sourceTree = "<group>"; };
+		FBF16E692378B2A20014A641 /* MyStack.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyStack.m; sourceTree = "<group>"; };
 		FBF41BFD2376D1F000D2CA6A /* Algorithms-Objective-C.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Algorithms-Objective-C.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBF41C002376D1F000D2CA6A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		FBF41C012376D1F000D2CA6A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -120,6 +126,24 @@
 			path = DiagonalDifference;
 			sourceTree = "<group>";
 		};
+		FBF16E632378B1740014A641 /* Queue */ = {
+			isa = PBXGroup;
+			children = (
+				FBF16E642378B1880014A641 /* MyQueue.h */,
+				FBF16E652378B1880014A641 /* MyQueue.m */,
+			);
+			path = Queue;
+			sourceTree = "<group>";
+		};
+		FBF16E672378B2930014A641 /* Stack */ = {
+			isa = PBXGroup;
+			children = (
+				FBF16E682378B2A20014A641 /* MyStack.h */,
+				FBF16E692378B2A20014A641 /* MyStack.m */,
+			);
+			path = Stack;
+			sourceTree = "<group>";
+		};
 		FBF41BF42376D1F000D2CA6A = {
 			isa = PBXGroup;
 			children = (
@@ -167,6 +191,8 @@
 		FBF41C242376D21500D2CA6A /* Challenges */ = {
 			isa = PBXGroup;
 			children = (
+				FBF16E672378B2930014A641 /* Stack */,
+				FBF16E632378B1740014A641 /* Queue */,
 				FB858C17237859FA00558D4F /* DiagonalDifference */,
 				FB858C13237858CD00558D4F /* PlusMinus */,
 				FB858C0F237857DB00558D4F /* StairCase */,
@@ -316,8 +342,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				FBF41C052376D1F000D2CA6A /* ViewController.m in Sources */,
+				FBF16E6A2378B2A20014A641 /* MyStack.m in Sources */,
 				FBF41C332376D6CB00D2CA6A /* JumpingOnTheClouds.m in Sources */,
 				FB858C1A23785A0900558D4F /* DiagonalDifference.m in Sources */,
+				FBF16E662378B1880014A641 /* MyQueue.m in Sources */,
 				FBF41C2F2376D3DB00D2CA6A /* CountingValleys.m in Sources */,
 				FBF41C102376D1F200D2CA6A /* main.m in Sources */,
 				FBF41C022376D1F000D2CA6A /* AppDelegate.m in Sources */,
