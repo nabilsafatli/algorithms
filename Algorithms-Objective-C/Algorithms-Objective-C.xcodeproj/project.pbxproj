@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		FB858C0E23782BC500558D4F /* SortingArray.m in Sources */ = {isa = PBXBuildFile; fileRef = FB858C0D23782BC500558D4F /* SortingArray.m */; };
+		FB858C12237857E800558D4F /* StairCase.m in Sources */ = {isa = PBXBuildFile; fileRef = FB858C11237857E800558D4F /* StairCase.m */; };
+		FB858C16237858DD00558D4F /* PlusMinus.m in Sources */ = {isa = PBXBuildFile; fileRef = FB858C15237858DD00558D4F /* PlusMinus.m */; };
+		FB858C1A23785A0900558D4F /* DiagonalDifference.m in Sources */ = {isa = PBXBuildFile; fileRef = FB858C1923785A0900558D4F /* DiagonalDifference.m */; };
 		FBF41C022376D1F000D2CA6A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FBF41C012376D1F000D2CA6A /* AppDelegate.m */; };
 		FBF41C052376D1F000D2CA6A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBF41C042376D1F000D2CA6A /* ViewController.m */; };
 		FBF41C082376D1F000D2CA6A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBF41C062376D1F000D2CA6A /* Main.storyboard */; };
@@ -34,6 +37,12 @@
 /* Begin PBXFileReference section */
 		FB858C0C23782BC500558D4F /* SortingArray.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SortingArray.h; sourceTree = "<group>"; };
 		FB858C0D23782BC500558D4F /* SortingArray.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SortingArray.m; sourceTree = "<group>"; };
+		FB858C10237857E800558D4F /* StairCase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StairCase.h; sourceTree = "<group>"; };
+		FB858C11237857E800558D4F /* StairCase.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StairCase.m; sourceTree = "<group>"; };
+		FB858C14237858DD00558D4F /* PlusMinus.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PlusMinus.h; sourceTree = "<group>"; };
+		FB858C15237858DD00558D4F /* PlusMinus.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PlusMinus.m; sourceTree = "<group>"; };
+		FB858C1823785A0900558D4F /* DiagonalDifference.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DiagonalDifference.h; sourceTree = "<group>"; };
+		FB858C1923785A0900558D4F /* DiagonalDifference.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DiagonalDifference.m; sourceTree = "<group>"; };
 		FBF41BFD2376D1F000D2CA6A /* Algorithms-Objective-C.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Algorithms-Objective-C.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBF41C002376D1F000D2CA6A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		FBF41C012376D1F000D2CA6A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -84,6 +93,33 @@
 			path = SortingArray;
 			sourceTree = "<group>";
 		};
+		FB858C0F237857DB00558D4F /* StairCase */ = {
+			isa = PBXGroup;
+			children = (
+				FB858C10237857E800558D4F /* StairCase.h */,
+				FB858C11237857E800558D4F /* StairCase.m */,
+			);
+			path = StairCase;
+			sourceTree = "<group>";
+		};
+		FB858C13237858CD00558D4F /* PlusMinus */ = {
+			isa = PBXGroup;
+			children = (
+				FB858C14237858DD00558D4F /* PlusMinus.h */,
+				FB858C15237858DD00558D4F /* PlusMinus.m */,
+			);
+			path = PlusMinus;
+			sourceTree = "<group>";
+		};
+		FB858C17237859FA00558D4F /* DiagonalDifference */ = {
+			isa = PBXGroup;
+			children = (
+				FB858C1823785A0900558D4F /* DiagonalDifference.h */,
+				FB858C1923785A0900558D4F /* DiagonalDifference.m */,
+			);
+			path = DiagonalDifference;
+			sourceTree = "<group>";
+		};
 		FBF41BF42376D1F000D2CA6A = {
 			isa = PBXGroup;
 			children = (
@@ -131,6 +167,9 @@
 		FBF41C242376D21500D2CA6A /* Challenges */ = {
 			isa = PBXGroup;
 			children = (
+				FB858C17237859FA00558D4F /* DiagonalDifference */,
+				FB858C13237858CD00558D4F /* PlusMinus */,
+				FB858C0F237857DB00558D4F /* StairCase */,
 				FB858C0B23782BA800558D4F /* SortingArray */,
 				FBF41C652376E18C00D2CA6A /* RepeatedString */,
 				FBF41C302376D6B600D2CA6A /* JumpingOnTheClouds */,
@@ -278,10 +317,13 @@
 			files = (
 				FBF41C052376D1F000D2CA6A /* ViewController.m in Sources */,
 				FBF41C332376D6CB00D2CA6A /* JumpingOnTheClouds.m in Sources */,
+				FB858C1A23785A0900558D4F /* DiagonalDifference.m in Sources */,
 				FBF41C2F2376D3DB00D2CA6A /* CountingValleys.m in Sources */,
 				FBF41C102376D1F200D2CA6A /* main.m in Sources */,
 				FBF41C022376D1F000D2CA6A /* AppDelegate.m in Sources */,
 				FBF41C272376D25300D2CA6A /* SockMerchant.m in Sources */,
+				FB858C16237858DD00558D4F /* PlusMinus.m in Sources */,
+				FB858C12237857E800558D4F /* StairCase.m in Sources */,
 				FB858C0E23782BC500558D4F /* SortingArray.m in Sources */,
 				FBF41C682376E1A500D2CA6A /* RepeatedString.m in Sources */,
 			);

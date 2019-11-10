@@ -22,8 +22,10 @@
     return [NSNumber numberWithLong:result];
 }
 
-+ (void) testCase {
-    long result = [(NSNumber *)[RepeatedString repeatedString:@"epsxyyflvrrrxzvnoenvpegvuonodjoxfwdmcvwctmekpsnamchznsoxaklzjgrqruyzavshfbmuhdwwmpbkwcuomqhiyvuztwvq" n:@549382313570] longValue];
++ (void) execute {
+    NSString *string = @"epsxyyflvrrrxzvnoenvpegvuonodjoxfwdmcvwctmekpsnamchznsoxaklzjgrqruyzavshfbmuhdwwmpbkwcuomqhiyvuztwvq";
+    NSNumber *number = @549382313570;
+    long result = [(NSNumber *)[RepeatedString repeatedString:string n:number] longValue];
     NSLog(@"Number of ocurrences of A is %ld", result);
 }
 
