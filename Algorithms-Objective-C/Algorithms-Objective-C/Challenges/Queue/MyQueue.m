@@ -35,4 +35,17 @@
     return item;
 }
 
+- (void) execute {
+    NSArray *numbers = [[NSArray alloc] initWithObjects:@0,@1,@2,@3,@4,@5, nil];
+    MyQueue *queue = [MyQueue new];
+    for(int i = 0; i < numbers.count; i++) {
+        id number = [numbers objectAtIndex:i];
+        [queue push:number];
+    }
+    for(int i = 0; i < numbers.count; i++) {
+        NSNumber *number = (NSNumber *)[queue pop];
+        NSLog(@"number: %i", [number intValue]);
+    }
+}
+
 @end

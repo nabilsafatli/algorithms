@@ -36,4 +36,17 @@
     return item;
 }
 
+-(void) execute {
+    NSArray *numbers = [[NSArray alloc] initWithObjects:@0,@1,@2,@3,@4,@5, nil];
+    MyStack *stack = [MyStack new];
+    for(int i = 0; i < numbers.count; i++) {
+        id number = [numbers objectAtIndex:i];
+        [stack push:number];
+    }
+    for(int i = 0; i < numbers.count; i++) {
+        NSNumber *number = (NSNumber *)[stack pop];
+        NSLog(@"number: %i", [number intValue]);
+    }
+}
+
 @end
