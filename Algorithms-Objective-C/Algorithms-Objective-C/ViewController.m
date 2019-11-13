@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-#import "HourGlass.h"
+#import "Node.h"
 
 @interface ViewController ()
 
@@ -18,7 +18,12 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-    [HourGlass execute];
+    Node* node = [[Node alloc] initWithValue:2];
+    for(int i = 3; i < 20; i++) {
+        [node insert:i];
+    }
+
+    [node print];
 }
 
 
