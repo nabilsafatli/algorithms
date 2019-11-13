@@ -11,15 +11,15 @@
 @implementation HourGlass
 
 + (NSNumber *) hourglassSum:(NSArray *)arr {
-    NSMutableArray *result = [NSMutableArray new];
-    NSArray *firstLine = (NSArray *) [arr objectAtIndex:0];
-    for(int i = 0; i < arr.count; i++) {
-        for(int u = 0; u < firstLine.count; u++) {
-            if((firstLine.count - u) < 3) {
-                return
-            }
-        }
-    }
+//    NSMutableArray *result = [NSMutableArray new];
+//    NSArray *firstLine = (NSArray *) [arr objectAtIndex:0];
+//    for(int i = 0; i < arr.count; i++) {
+//        for(int u = 0; u < firstLine.count; u++) {
+//            if((firstLine.count - u) < 3) {
+//                return
+//            }
+//        }
+//    }
     return [NSNumber numberWithInt:0];
 }
 
