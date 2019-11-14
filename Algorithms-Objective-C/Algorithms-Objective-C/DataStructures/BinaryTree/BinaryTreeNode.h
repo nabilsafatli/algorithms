@@ -10,10 +10,10 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface Node : NSObject
+@interface BinaryTreeNode : NSObject
 
-@property (nonatomic, retain) Node *rightNode;
-@property (nonatomic, retain) Node *leftNode;
+@property (nonatomic, retain) BinaryTreeNode *rightNode;
+@property (nonatomic, retain) BinaryTreeNode *leftNode;
 @property NSUInteger value;
 
 - (instancetype)initWithValue:(NSUInteger) value;

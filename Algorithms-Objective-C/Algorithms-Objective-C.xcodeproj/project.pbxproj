@@ -7,8 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FB248991237DE81000EC3EA4 /* LinkedList.m in Sources */ = {isa = PBXBuildFile; fileRef = FB248990237DE81000EC3EA4 /* LinkedList.m */; };
+		FB248994237DE83700EC3EA4 /* LinkedListNode.m in Sources */ = {isa = PBXBuildFile; fileRef = FB248993237DE83700EC3EA4 /* LinkedListNode.m */; };
 		FB7CDCC8237937BC00DB65AF /* HourGlass.m in Sources */ = {isa = PBXBuildFile; fileRef = FB7CDCC7237937BC00DB65AF /* HourGlass.m */; };
-		FB7ED154237BE8220041329F /* Node.m in Sources */ = {isa = PBXBuildFile; fileRef = FB7ED153237BE8220041329F /* Node.m */; };
+		FB7ED154237BE8220041329F /* BinaryTreeNode.m in Sources */ = {isa = PBXBuildFile; fileRef = FB7ED153237BE8220041329F /* BinaryTreeNode.m */; };
 		FB858C0E23782BC500558D4F /* SortingArray.m in Sources */ = {isa = PBXBuildFile; fileRef = FB858C0D23782BC500558D4F /* SortingArray.m */; };
 		FB858C12237857E800558D4F /* StairCase.m in Sources */ = {isa = PBXBuildFile; fileRef = FB858C11237857E800558D4F /* StairCase.m */; };
 		FB858C16237858DD00558D4F /* PlusMinus.m in Sources */ = {isa = PBXBuildFile; fileRef = FB858C15237858DD00558D4F /* PlusMinus.m */; };
@@ -39,10 +41,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FB24898F237DE81000EC3EA4 /* LinkedList.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LinkedList.h; sourceTree = "<group>"; };
+		FB248990237DE81000EC3EA4 /* LinkedList.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LinkedList.m; sourceTree = "<group>"; };
+		FB248992237DE83700EC3EA4 /* LinkedListNode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LinkedListNode.h; sourceTree = "<group>"; };
+		FB248993237DE83700EC3EA4 /* LinkedListNode.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LinkedListNode.m; sourceTree = "<group>"; };
 		FB7CDCC6237937BC00DB65AF /* HourGlass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HourGlass.h; sourceTree = "<group>"; };
 		FB7CDCC7237937BC00DB65AF /* HourGlass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HourGlass.m; sourceTree = "<group>"; };
-		FB7ED152237BE8220041329F /* Node.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Node.h; sourceTree = "<group>"; };
-		FB7ED153237BE8220041329F /* Node.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Node.m; sourceTree = "<group>"; };
+		FB7ED152237BE8220041329F /* BinaryTreeNode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BinaryTreeNode.h; sourceTree = "<group>"; };
+		FB7ED153237BE8220041329F /* BinaryTreeNode.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BinaryTreeNode.m; sourceTree = "<group>"; };
 		FB858C0C23782BC500558D4F /* SortingArray.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SortingArray.h; sourceTree = "<group>"; };
 		FB858C0D23782BC500558D4F /* SortingArray.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SortingArray.m; sourceTree = "<group>"; };
 		FB858C10237857E800558D4F /* StairCase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StairCase.h; sourceTree = "<group>"; };
@@ -96,6 +102,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FB24898E237DE7FD00EC3EA4 /* LinkedList */ = {
+			isa = PBXGroup;
+			children = (
+				FB24898F237DE81000EC3EA4 /* LinkedList.h */,
+				FB248990237DE81000EC3EA4 /* LinkedList.m */,
+				FB248992237DE83700EC3EA4 /* LinkedListNode.h */,
+				FB248993237DE83700EC3EA4 /* LinkedListNode.m */,
+			);
+			path = LinkedList;
+			sourceTree = "<group>";
+		};
 		FB7CDCC5237937AB00DB65AF /* HourGlass */ = {
 			isa = PBXGroup;
 			children = (
@@ -108,6 +125,7 @@
 		FB7ED150237BE7CF0041329F /* DataStructures */ = {
 			isa = PBXGroup;
 			children = (
+				FB24898E237DE7FD00EC3EA4 /* LinkedList */,
 				FB7ED151237BE8040041329F /* BinaryTree */,
 				FBF16E672378B2930014A641 /* Stack */,
 				FBF16E632378B1740014A641 /* Queue */,
@@ -118,8 +136,8 @@
 		FB7ED151237BE8040041329F /* BinaryTree */ = {
 			isa = PBXGroup;
 			children = (
-				FB7ED152237BE8220041329F /* Node.h */,
-				FB7ED153237BE8220041329F /* Node.m */,
+				FB7ED152237BE8220041329F /* BinaryTreeNode.h */,
+				FB7ED153237BE8220041329F /* BinaryTreeNode.m */,
 			);
 			path = BinaryTree;
 			sourceTree = "<group>";
@@ -375,16 +393,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB248994237DE83700EC3EA4 /* LinkedListNode.m in Sources */,
 				FB7CDCC8237937BC00DB65AF /* HourGlass.m in Sources */,
 				FBF41C052376D1F000D2CA6A /* ViewController.m in Sources */,
 				FBF16E6A2378B2A20014A641 /* MyStack.m in Sources */,
 				FBF41C332376D6CB00D2CA6A /* JumpingOnTheClouds.m in Sources */,
 				FB858C1A23785A0900558D4F /* DiagonalDifference.m in Sources */,
-				FB7ED154237BE8220041329F /* Node.m in Sources */,
+				FB7ED154237BE8220041329F /* BinaryTreeNode.m in Sources */,
 				FBF16E662378B1880014A641 /* MyQueue.m in Sources */,
 				FBF41C2F2376D3DB00D2CA6A /* CountingValleys.m in Sources */,
 				FBF41C102376D1F200D2CA6A /* main.m in Sources */,
 				FBF41C022376D1F000D2CA6A /* AppDelegate.m in Sources */,
+				FB248991237DE81000EC3EA4 /* LinkedList.m in Sources */,
 				FBF41C272376D25300D2CA6A /* SockMerchant.m in Sources */,
 				FB858C16237858DD00558D4F /* PlusMinus.m in Sources */,
 				FB858C12237857E800558D4F /* StairCase.m in Sources */,

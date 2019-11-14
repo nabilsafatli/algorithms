@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-#import "Node.h"
+#import "BinaryTreeNode.h"
 
 @interface ViewController ()
 
@@ -18,7 +18,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-    Node* node = [[Node alloc] initWithValue:2];
+    BinaryTreeNode* node = [[BinaryTreeNode alloc] initWithValue:2];
     for(int i = 3; i < 20; i++) {
         [node insert:i];
     }

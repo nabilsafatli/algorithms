@@ -6,9 +6,9 @@
 //  Copyright © 2019 Nabil. All rights reserved.
 //
 
-#import "Node.h"
+#import "BinaryTreeNode.h"
 
-@implementation Node
+@implementation BinaryTreeNode
 
 - (instancetype)initWithValue:(NSUInteger) value {
     self = [super init];
@@ -27,13 +27,13 @@
         if(self.rightNode) {
             [self.rightNode insert:number];
         } else {
-            self.rightNode = [[Node alloc] initWithValue:number];
+            self.rightNode = [[BinaryTreeNode alloc] initWithValue:number];
         }
     } else {
         if(self.leftNode) {
             [self.leftNode insert:number];
         } else {
-            self.leftNode = [[Node alloc] initWithValue:number];
+            self.leftNode = [[BinaryTreeNode alloc] initWithValue:number];
         }
     }
 }
