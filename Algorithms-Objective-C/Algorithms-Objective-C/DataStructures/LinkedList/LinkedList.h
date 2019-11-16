@@ -12,6 +12,12 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface LinkedList : NSObject
 
+@property int data;
+
+@property (nonatomic, retain) LinkedList *next;
+
+-(void) appendItem:(LinkedList *) item;
+
 @end
 
 NS_ASSUME_NONNULL_END

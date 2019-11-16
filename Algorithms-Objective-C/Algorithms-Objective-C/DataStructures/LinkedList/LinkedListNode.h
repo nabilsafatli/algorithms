@@ -12,7 +12,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface LinkedListNode : NSObject
 
-@property (nonatomic, retain) LinkedListNode *next;
+@property (nonatomic, retain) LinkedListNode *head;
 
 @end
 

@@ -10,4 +10,12 @@
 
 @implementation LinkedList
 
+-(void) appendItem:(LinkedList *) item {
+    if(!self.next) {
+        self.next = item;
+    } else {
+        [self.next appendItem:item];
+    }
+}
+
 @end
