@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		FB2D14292388744800F1DCC0 /* BinaryTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2D14282388744800F1DCC0 /* BinaryTree.swift */; };
+		FBB66A352389C6A300308D1C /* RotateLeftArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB66A342389C6A300308D1C /* RotateLeftArray.swift */; };
 		FBF41C412376DA6100D2CA6A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBF41C402376DA6100D2CA6A /* AppDelegate.swift */; };
 		FBF41C432376DA6100D2CA6A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBF41C422376DA6100D2CA6A /* ViewController.swift */; };
 		FBF41C462376DA6100D2CA6A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBF41C442376DA6100D2CA6A /* Main.storyboard */; };
@@ -30,6 +31,7 @@
 
 /* Begin PBXFileReference section */
 		FB2D14282388744800F1DCC0 /* BinaryTree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinaryTree.swift; sourceTree = "<group>"; };
+		FBB66A342389C6A300308D1C /* RotateLeftArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RotateLeftArray.swift; sourceTree = "<group>"; };
 		FBF41C3D2376DA6100D2CA6A /* Algorithms-Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Algorithms-Swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBF41C402376DA6100D2CA6A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FBF41C422376DA6100D2CA6A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -117,6 +119,7 @@
 			children = (
 				FBF41C612376DA9300D2CA6A /* TwoSum.swift */,
 				FBF41C632376DB1E00D2CA6A /* BinarySearch.swift */,
+				FBB66A342389C6A300308D1C /* RotateLeftArray.swift */,
 			);
 			path = Challenges;
 			sourceTree = "<group>";
@@ -227,6 +230,7 @@
 				FB2D14292388744800F1DCC0 /* BinaryTree.swift in Sources */,
 				FBF41C412376DA6100D2CA6A /* AppDelegate.swift in Sources */,
 				FBF41C622376DA9300D2CA6A /* TwoSum.swift in Sources */,
+				FBB66A352389C6A300308D1C /* RotateLeftArray.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
