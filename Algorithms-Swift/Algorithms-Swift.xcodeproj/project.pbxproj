@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		FB2D14292388744800F1DCC0 /* BinaryTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2D14282388744800F1DCC0 /* BinaryTree.swift */; };
+		FB98BE7D238C93C400F3B173 /* Sort.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB98BE7C238C93C400F3B173 /* Sort.swift */; };
 		FBB66A352389C6A300308D1C /* RotateLeftArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB66A342389C6A300308D1C /* RotateLeftArray.swift */; };
 		FBF41C412376DA6100D2CA6A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBF41C402376DA6100D2CA6A /* AppDelegate.swift */; };
 		FBF41C432376DA6100D2CA6A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBF41C422376DA6100D2CA6A /* ViewController.swift */; };
@@ -31,6 +32,7 @@
 
 /* Begin PBXFileReference section */
 		FB2D14282388744800F1DCC0 /* BinaryTree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinaryTree.swift; sourceTree = "<group>"; };
+		FB98BE7C238C93C400F3B173 /* Sort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sort.swift; sourceTree = "<group>"; };
 		FBB66A342389C6A300308D1C /* RotateLeftArray.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RotateLeftArray.swift; sourceTree = "<group>"; };
 		FBF41C3D2376DA6100D2CA6A /* Algorithms-Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Algorithms-Swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBF41C402376DA6100D2CA6A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -72,6 +74,14 @@
 			path = DataStructure;
 			sourceTree = "<group>";
 		};
+		FB98BE7B238C93B600F3B173 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				FB98BE7C238C93C400F3B173 /* Sort.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
 		FBF41C342376DA6100D2CA6A = {
 			isa = PBXGroup;
 			children = (
@@ -93,6 +103,7 @@
 		FBF41C3F2376DA6100D2CA6A /* Algorithms-Swift */ = {
 			isa = PBXGroup;
 			children = (
+				FB98BE7B238C93B600F3B173 /* Common */,
 				FB2D14272388743800F1DCC0 /* DataStructure */,
 				FBF41C602376DA7100D2CA6A /* Challenges */,
 				FBF41C402376DA6100D2CA6A /* AppDelegate.swift */,
@@ -229,6 +240,7 @@
 				FBF41C432376DA6100D2CA6A /* ViewController.swift in Sources */,
 				FB2D14292388744800F1DCC0 /* BinaryTree.swift in Sources */,
 				FBF41C412376DA6100D2CA6A /* AppDelegate.swift in Sources */,
+				FB98BE7D238C93C400F3B173 /* Sort.swift in Sources */,
 				FBF41C622376DA9300D2CA6A /* TwoSum.swift in Sources */,
 				FBB66A352389C6A300308D1C /* RotateLeftArray.swift in Sources */,
 			);
