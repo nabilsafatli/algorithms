@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="DO8-rr-nXR">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -16,25 +16,87 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kuQ-lu-9OD">
-                                <rect key="frame" x="144" y="438" width="126" height="30"/>
-                                <state key="normal" title="Execute Algorithm"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="bhF-Wb-2va">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <connections>
-                                    <action selector="executeAlgorithm:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Meq-TV-WjX"/>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="x9T-S5-Bbh"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="1En-aW-04Q"/>
                                 </connections>
-                            </button>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="kuQ-lu-9OD" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="5fn-kh-KGh"/>
-                            <constraint firstItem="kuQ-lu-9OD" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="SAK-ha-JN7"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="bhF-Wb-2va" secondAttribute="bottom" id="Lzj-d8-Bkv"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="bhF-Wb-2va" secondAttribute="trailing" id="pVf-3g-x9b"/>
+                            <constraint firstItem="bhF-Wb-2va" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="tje-Jg-Zmb"/>
+                            <constraint firstItem="bhF-Wb-2va" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="xaM-WJ-6wU"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" id="oJx-J8-ljY"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="139" y="102"/>
+            <point key="canvasLocation" x="1800" y="86"/>
+        </scene>
+        <!--Algorithm View Controller-->
+        <scene sceneID="3MD-E5-RAF">
+            <objects>
+                <viewController storyboardIdentifier="AlgorithmViewController" id="eQX-3B-8US" customClass="AlgorithmViewController" customModule="Algorithms_Swift" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="APO-2n-nNZ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="algorithm name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6xa-hW-msM">
+                                <rect key="frame" x="129" y="94" width="156.5" height="26.5"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eMI-hl-w2c">
+                                <rect key="frame" x="163.5" y="432" width="87" height="42"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="Execute"/>
+                                <connections>
+                                    <action selector="executeButtonTapped:" destination="eQX-3B-8US" eventType="touchUpInside" id="aNP-GJ-YV5"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="eMI-hl-w2c" firstAttribute="centerY" secondItem="uQJ-jM-gBl" secondAttribute="centerY" id="5Lo-Or-86E"/>
+                            <constraint firstItem="6xa-hW-msM" firstAttribute="top" secondItem="uQJ-jM-gBl" secondAttribute="top" constant="50" id="HdZ-0y-Dn9"/>
+                            <constraint firstItem="eMI-hl-w2c" firstAttribute="centerX" secondItem="uQJ-jM-gBl" secondAttribute="centerX" id="VYk-oB-t8K"/>
+                            <constraint firstItem="6xa-hW-msM" firstAttribute="centerX" secondItem="uQJ-jM-gBl" secondAttribute="centerX" id="kJT-4C-jEx"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="uQJ-jM-gBl"/>
+                    </view>
+                    <connections>
+                        <outlet property="algorithmNameLabel" destination="6xa-hW-msM" id="3GE-Xw-sW8"/>
+                        <outlet property="executeButton" destination="eMI-hl-w2c" id="wKN-ft-Kse"/>
+                        <outlet property="view" destination="APO-2n-nNZ" id="3YM-qh-nh8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bjc-nK-L29" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2606" y="86"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="LMp-ES-FhK">
+            <objects>
+                <navigationController id="DO8-rr-nXR" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="NIw-Oh-yfK">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Dp3-kL-78K"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Fkd-Bd-Zlh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1045" y="87"/>
         </scene>
     </scenes>
 </document>
