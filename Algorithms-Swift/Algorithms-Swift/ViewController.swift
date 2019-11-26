@@ -37,16 +37,15 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        guard indexPath.section == 0, let
-            storyboardController = self.storyboard?.instantiateViewController(withIdentifier: "AlgorithmViewController"),
+        guard let storyboardController = self.storyboard?.instantiateViewController(withIdentifier: "AlgorithmViewController"),
             let algorithmViewController = storyboardController as? AlgorithmViewController else { return }
 
-        if(indexPath.row == 0) {
+        if(indexPath.section == 0 && indexPath.row == 0) {
             algorithmViewController.algorithmName = "Quick Sort"
             algorithmViewController.algorithmCode = {
                 QuickSort.execute()
             }
-        } else if(indexPath.row == 1) {
+        } else if(indexPath.section == 0 && indexPath.row == 1) {
             algorithmViewController.algorithmName = "Bubble Sort"
             algorithmViewController.algorithmCode = {
                 BubbleSort.execute()
