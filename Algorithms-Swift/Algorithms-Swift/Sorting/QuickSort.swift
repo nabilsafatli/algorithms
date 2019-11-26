@@ -10,18 +10,21 @@ import Foundation
 
 class QuickSort {
     static func sort(array: [Int]) -> [Int] {
-        var sortedArray = array
-        var j = 0
-        for i in stride(from: array.count - 1, to: 0, by: -1) {
-            let pivot = sortedArray[i]
-            if sortedArray[j] > pivot {
-                let temporaryValue = sortedArray[j]
-                sortedArray[j] = pivot
-                sortedArray[i] = temporaryValue
-                j += 1
+        guard array.count > 1 else { return array }
+        var lessThanPivot = [Int]()
+        var equalToPivot = [Int]()
+        var greaterThanPivot = [Int]()
+        let pivot = array[array.count/2]
+        for number in array {
+            if number > pivot {
+                greaterThanPivot.append(number)
+            } else if number == pivot {
+                equalToPivot.append(number)
+            } else {
+                lessThanPivot.append(number)
             }
         }
-        return []
+        return sort(array: lessThanPivot) + equalToPivot + sort(array: greaterThanPivot)
     }
 
     static func execute() {
