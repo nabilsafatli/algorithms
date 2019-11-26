@@ -26,12 +26,14 @@ class Sort {
 
     static func quickSort(array: [Int]) -> [Int] {
         var sortedArray = array
-        for i in sortedArray.count - 1..<0 {
+        var j = 0
+        for i in stride(from: array.count - 1, to: 0, by: -1) {
             let pivot = sortedArray[i]
-            if sortedArray[i] > pivot {
-                let temporaryValue = sortedArray[i]
-                sortedArray[i] = pivot
-                sortedArray[sortedArray.count - 1] = temporaryValue
+            if sortedArray[j] > pivot {
+                let temporaryValue = sortedArray[j]
+                sortedArray[j] = pivot
+                sortedArray[i] = temporaryValue
+                j += 1
             }
         }
         return []

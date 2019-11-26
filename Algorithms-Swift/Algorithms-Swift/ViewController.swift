@@ -15,6 +15,6 @@ class ViewController: UIViewController {
     }
 
     @IBAction func executeAlgorithm(_ sender: Any) {
-        RotateLeftArray.execute()
+        Sort.execute()
     }
 }
