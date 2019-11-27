@@ -12,7 +12,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     let sectionsTitles: [String] = ["Sorting", "Data Structure", "Challenges"]
     let sortingAlgorithmsTitles: [String] = ["Quick Sort", "Bubble Sort", "Merge Sort"]
     let dataStructuresTitles: [String] = ["Binary Tree", "Graph", "Queue", "Stack"]
-    let challengesTitles: [String] = ["Two Sum", "Binary Search", "Rotate Left Array"]
+    let challengesTitles: [String] = ["Two Sum", "Binary Search", "Rotate Left Array", "Nth Order Statistic"]
     var algorithmsGroups: [[String]] {
         return [sortingAlgorithmsTitles, dataStructuresTitles, challengesTitles]
     }
@@ -49,6 +49,11 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             algorithmViewController.algorithmName = "Bubble Sort"
             algorithmViewController.algorithmCode = {
                 BubbleSort.execute()
+            }
+        } else if(indexPath.section == 2 && indexPath.row == 3) {
+            algorithmViewController.algorithmName = "Nth Order Statistic"
+            algorithmViewController.algorithmCode = {
+                NthOrderStatistic.execute()
             }
         } else {
             algorithmViewController.algorithmName = "Work in Progress"

@@ -1,5 +1,5 @@
 //
-//  NthSmallest.swift
+//  NthOrderStatistic.swift
 //  Algorithms-Swift
 //
 //  Created by Nabil Safatli on 2019-11-27.
@@ -8,7 +8,7 @@
 
 import Foundation
 
-class NthSmallest {
+class NthOrderStatistic {
     // Find the third smallest number in an UNSORTED array
     // { 10, 2, 5, 6, 11, 3, 15 }
     // In this case it would be 4 at index 3
@@ -19,7 +19,7 @@ class NthSmallest {
         let pivot = array[array.count - 1]
         var j = 0
         for i in 0..<array.count {
-            if array[i] < pivot {
+            if array[i] > pivot {
                 let temp = array[j]
                 array[j] = array[i]
                 array[i] = temp
