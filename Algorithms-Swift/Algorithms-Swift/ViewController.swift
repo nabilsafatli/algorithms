@@ -50,6 +50,11 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             algorithmViewController.algorithmCode = {
                 BubbleSort.execute()
             }
+        } else if(indexPath.section == 0 && indexPath.row == 2) {
+            algorithmViewController.algorithmName = "Merge Sort"
+            algorithmViewController.algorithmCode = {
+                MergeSort.execute()
+            }
         } else if(indexPath.section == 2 && indexPath.row == 3) {
             algorithmViewController.algorithmName = "Nth Order Statistic"
             algorithmViewController.algorithmCode = {

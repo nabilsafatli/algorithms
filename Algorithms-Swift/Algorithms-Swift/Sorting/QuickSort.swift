@@ -11,7 +11,7 @@ import Foundation
 class QuickSort {
     static func execute() {
         var unsortedArraySample = [10, 3, 1, 7, 0, 2, 8]
-        let sortedArray = sort(array: &unsortedArraySample)
+        let sortedArray = sort(&unsortedArraySample)
         for n in sortedArray {
             print(n)
         }
@@ -20,12 +20,12 @@ class QuickSort {
 
 //MARK: - Lomuto's partitioning
 extension QuickSort {
-    static func sort(array: inout [Int]) -> [Int] {
+    static func sort(_ array: inout [Int]) -> [Int] {
         guard array.count > 1 else { return array }
         var lessThanPivot = [Int]()
         var equalToPivot = [Int]()
         var greaterThanPivot = [Int]()
-        let pivotIndex = pivot(array: &array, left: 0, right: array.count - 1)
+        let pivotIndex = pivot(for: &array, left: 0, right: array.count - 1)
         for number in array {
             if number > array[pivotIndex] {
                 greaterThanPivot.append(number)
@@ -35,10 +35,10 @@ extension QuickSort {
                 lessThanPivot.append(number)
             }
         }
-        return sort(array: &lessThanPivot) + equalToPivot + sort(array: &greaterThanPivot)
+        return sort(&lessThanPivot) + equalToPivot + sort(&greaterThanPivot)
     }
     
-    static func pivot(array: inout [Int], left: Int, right: Int) -> Int {
+    static func pivot(for array: inout [Int], left: Int, right: Int) -> Int {
         let pivot = array[right]
         var i = 0
         for j in left..<right {
