@@ -11,7 +11,7 @@ import UIKit
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     let sectionsTitles: [String] = ["Sorting", "Data Structure", "Challenges"]
     let sortingAlgorithmsTitles: [String] = ["Quick Sort", "Bubble Sort", "Merge Sort"]
-    let dataStructuresTitles: [String] = ["Binary Tree", "Graph", "Queue", "Stack"]
+    let dataStructuresTitles: [String] = ["Binary Tree", "Graph", "Queue", "Stack", "Linked List"]
     let challengesTitles: [String] = ["Two Sum", "Binary Search", "Rotate Left Array", "Nth Order Statistic"]
     var algorithmsGroups: [[String]] {
         return [sortingAlgorithmsTitles, dataStructuresTitles, challengesTitles]
@@ -54,6 +54,15 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             algorithmViewController.algorithmName = "Merge Sort"
             algorithmViewController.algorithmCode = {
                 MergeSort.execute()
+            }
+        } else if(indexPath.section == 1 && indexPath.row == 4) {
+            algorithmViewController.algorithmName = "Linked List"
+            algorithmViewController.algorithmCode = {
+                let linkedList = LinkedList()
+                for i in 0..<14 {
+                    linkedList.insert(data: i)
+                }
+                linkedList.log()
             }
         } else if(indexPath.section == 2 && indexPath.row == 3) {
             algorithmViewController.algorithmName = "Nth Order Statistic"
