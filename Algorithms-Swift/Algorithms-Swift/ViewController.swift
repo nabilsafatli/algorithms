@@ -60,6 +60,11 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             algorithmViewController.algorithmCode = {
                 LinkedList<Int>.execute()
             }
+        } else if(indexPath.section == 1 && indexPath.row == 3) {
+            algorithmViewController.algorithmName = "Stacks"
+            algorithmViewController.algorithmCode = {
+                Stack<Int>.execute()
+            }
         } else if(indexPath.section == 2 && indexPath.row == 3) {
             algorithmViewController.algorithmName = "Nth Order Statistic"
             algorithmViewController.algorithmCode = {
