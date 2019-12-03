@@ -16,30 +16,30 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     var algorithmsGroups: [[String]] {
         return [sortingAlgorithmsTitles, dataStructuresTitles, challengesTitles]
     }
-
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return algorithmsGroups[section].count
     }
-
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = UITableViewCell(style: .default, reuseIdentifier: "cell")
         let algorithmName = algorithmsGroups[indexPath.section][indexPath.row]
         cell.textLabel?.text = algorithmName
         return cell
     }
-
+    
     func numberOfSections(in tableView: UITableView) -> Int {
         return algorithmsGroups.count
     }
-
+    
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         return sectionsTitles[section]
     }
-
+    
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         guard let storyboardController = self.storyboard?.instantiateViewController(withIdentifier: "AlgorithmViewController"),
             let algorithmViewController = storyboardController as? AlgorithmViewController else { return }
-
+        
         if(indexPath.section == 0 && indexPath.row == 0) {
             algorithmViewController.algorithmName = "Quick Sort"
             algorithmViewController.algorithmCode = {
@@ -60,7 +60,13 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             algorithmViewController.algorithmCode = {
                 LinkedList<Int>.execute()
             }
-        } else if(indexPath.section == 1 && indexPath.row == 3) {
+        } else if(indexPath.section == 1 && indexPath.row == 2) {
+            algorithmViewController.algorithmName = "Queues"
+            algorithmViewController.algorithmCode = {
+                Queue<Int>.execute()
+            }
+        }
+        else if(indexPath.section == 1 && indexPath.row == 3) {
             algorithmViewController.algorithmName = "Stacks"
             algorithmViewController.algorithmCode = {
                 Stack<Int>.execute()
@@ -73,7 +79,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         } else {
             algorithmViewController.algorithmName = "Work in Progress"
         }
-
+        
         self.navigationController?.pushViewController(algorithmViewController, animated: true)
     }
 }
