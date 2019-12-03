@@ -58,11 +58,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         } else if(indexPath.section == 1 && indexPath.row == 4) {
             algorithmViewController.algorithmName = "Linked List"
             algorithmViewController.algorithmCode = {
-                let linkedList = LinkedList()
-                for i in 0..<14 {
-                    linkedList.insert(data: i)
-                }
-                linkedList.log()
+                LinkedList<Int>.execute()
             }
         } else if(indexPath.section == 2 && indexPath.row == 3) {
             algorithmViewController.algorithmName = "Nth Order Statistic"

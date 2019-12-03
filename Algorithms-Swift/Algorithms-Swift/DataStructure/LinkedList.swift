@@ -8,43 +8,15 @@
 
 import Foundation
 
-class LinkedList {
-    var head: Node
+class LinkedList<T> {
+    private var head: Node<T>
     
-    init(data: Int) {
-        head = Node(data: data)
-    }
-    
-    class Node {
-        var data: Int
-        var next: Node?
-        
-        init(data: Int) {
-            self.data = data
-        }
-        
-        func insert(data: Int) {
-            guard let next = next else {
-                let node = Node(data: data)
-                self.next = node
-                return
-            }
-            next.insert(data: data)
-        }
-        
-        func log() {
-            print(data)
-            next?.log()
-        }
+    init(data: T) {
+        head = Node<T>(data: data)
     }
 
-    func insert(data: Int) {
-        let node = Node(data: data)
-        if head.next == nil {
-            head.next = node
-        } else {
-            node.insert(data: data)
-        }
+    func insert(data: T) {
+        head.insert(data: data)
     }
 
     func log() {
@@ -54,5 +26,39 @@ class LinkedList {
         }
         print(next.data)
         next.log()
+    }
+
+    static func execute() {
+        let linkedList = LinkedList<Int>(data: 10)
+        for i in 0..<400 {
+            linkedList.insert(data: i)
+        }
+
+        linkedList.log()
+    }
+}
+
+private class Node<T> {
+    var data: T
+    var next: Node<T>?
+    weak var previous: Node<T>?
+
+    init(data: T) {
+        self.data = data
+    }
+
+    func insert(data: T) {
+        guard let next = next else {
+            let node = Node(data: data)
+            node.previous = self
+            self.next = node
+            return
+        }
+        next.insert(data: data)
+    }
+
+    func log() {
+        print(data)
+        next?.log()
     }
 }
