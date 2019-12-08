@@ -13,43 +13,24 @@ class MinimumSwaps {
 
     static func minimumSwaps(arr: [Int]) -> Int {
         var myArray = arr
-        quickSort(&myArray, begin: 0, end: myArray.count - 1)
-        return swapsCounter
-    }
-
-    static func quickSort(_ array: inout [Int], begin: Int, end: Int) {
-        if begin < end {
-            let partitionIndex = partition(&array, begin, end)
-            quickSort(&array, begin: begin, end: partitionIndex - 1)
-            quickSort(&array, begin: partitionIndex + 1, end: end)
-        }
-    }
-
-    static func partition(_ array: inout [Int],_ begin: Int,_ end: Int) -> Int {
-        let pivot = array[end]
-        var i = begin - 1
-        for j in begin..<end {
-            if array[j] <= pivot {
-                i += 1
-                swap(i: i, j: j, array: &array)
+        for i in 0..<myArray.count {
+            if arr[i] != i + 1 {
+                swap(i, myArray[i] - 1, &myArray)
             }
         }
-
-        swap(i: i + 1, j: end, array: &array)
-
-        return i + 1
+        return swapsCounter
     }
-
-    static func swap(i: Int, j: Int, array: inout [Int]) {
-        swapsCounter += 1
+    
+    static func swap(_ i: Int, _ j: Int, _ array: inout [Int]) {
         let temporary = array[i]
         array[i] = array[j]
         array[j] = temporary
+        swapsCounter += 1
     }
 
     static func execute() {
-        let array = [4, 3, 1, 2]
+        let array = [1, 3, 5, 2, 4, 6, 7]
         let counter = minimumSwaps(arr: array)
-        print("Minimum swaps for [4, 3, 1, 2] is \(counter)")
+        print("Minimum swaps for [1 3 5 2 4 6 7] is \(counter)")
     }
 }
