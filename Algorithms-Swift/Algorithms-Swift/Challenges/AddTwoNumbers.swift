@@ -35,7 +35,6 @@ class AddTwoNumbers {
         let secondNumber = getNumber(l2)
         let total = firstNumber + secondNumber
         let finalNode = buildListNode(total)
-        print("Final Node number: \(getNumber(finalNode))")
         return finalNode
     }
 
@@ -43,59 +42,57 @@ class AddTwoNumbers {
         guard let listNode = listNode else { return 0 }
         var number: UInt64 = 0
         var currentNode: ListNode? = listNode
-        var counter = 0
-        var multiplier = 1
-        while(currentNode != nil) {
-            multiplier = 1
-            for _ in 0..<counter {
-                multiplier = multiplier * 10
-            }
-            number += UInt64(currentNode!.val * multiplier)
-            counter += 1
-            currentNode = currentNode!.next
+        var multiplier: UInt64 = 1
+        while let node = currentNode {
+            number += UInt64(node.val) * multiplier
+            currentNode = node.next
+            multiplier = multiplier * 10
         }
         return number
     }
 
     static func buildListNode(_ number: UInt64) -> ListNode? {
-        var headNode: ListNode?
-        var currentNumber = number
-        var currentNode: ListNode?
-        if currentNumber == 0 {
-            return ListNode(0)
-        }
+        let firstDigit = Int(number % 10)
+        let headNode = ListNode(firstDigit)
+        var currentNumber = number/10
+        var currentNode: ListNode? = headNode
+
         while currentNumber > 0 {
-            if currentNode == nil {
-                headNode = ListNode(Int(currentNumber%10))
-                currentNode = headNode
-            } else {
-                currentNode?.next = ListNode(Int(currentNumber%10))
-                currentNode = currentNode?.next
-            }
+            let digit = Int(currentNumber % 10)
+            currentNode?.next = ListNode(digit)
+            currentNode = currentNode?.next
             currentNumber = currentNumber/10
         }
         return headNode
     }
 
     static func execute() {
-        let l1_0 = ListNode(0)
-        let l2_0 = ListNode(0)
-        
-        if let result = addTwoNumbers(l1_0, l2_0) {
-            print("# result: \(result)")
-        } else {
-            print("No valid result for Adding Two Numbers")
-        }
-    }
+        let l1_2 = ListNode(1)
+        let l1_0_0 = ListNode(0)
+        let l1_0_1 = ListNode(0)
+        let l1_0_2 = ListNode(0)
+        let l1_0_3 = ListNode(0)
+        let l1_0_4 = ListNode(0)
+        let l1_0_5 = ListNode(0)
+        let l1_0_6 = ListNode(0)
+        let l1_0_7 = ListNode(0)
+        let l1_0_8 = ListNode(0)
+        let l1_0_9 = ListNode(0)
+        let l1_0_10 = ListNode(0)
+        let l1_1 = ListNode(1)
+        l1_2.next = l1_0_0
+        l1_0_0.next = l1_0_1
+        l1_0_1.next = l1_0_2
+        l1_0_2.next = l1_0_3
+        l1_0_3.next = l1_0_4
+        l1_0_4.next = l1_0_5
+        l1_0_5.next = l1_0_6
+        l1_0_6.next = l1_0_7
+        l1_0_7.next = l1_0_8
+        l1_0_8.next = l1_0_9
+        l1_0_9.next = l1_0_10
+        l1_0_10.next = l1_1
 
-    
-    static func execute_caseA() {
-        let l1_2 = ListNode(2)
-        let l1_4 = ListNode(4)
-        let l1_3 = ListNode(3)
-        l1_2.next = l1_4
-        l1_4.next = l1_3
-        
         let l2_5 = ListNode(5)
         let l2_6 = ListNode(6)
         let l2_4 = ListNode(4)
