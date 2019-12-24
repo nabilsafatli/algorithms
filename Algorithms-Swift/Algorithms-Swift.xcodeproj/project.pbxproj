@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		FB2D14292388744800F1DCC0 /* BinaryTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2D14282388744800F1DCC0 /* BinaryTree.swift */; };
+		FB3D0ABB23B28C6F00BD9A87 /* AutoCompleteSearch.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB3D0ABA23B28C6F00BD9A87 /* AutoCompleteSearch.storyboard */; };
+		FB3D0ABD23B28CA200BD9A87 /* AutoCompleteSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB3D0ABC23B28CA200BD9A87 /* AutoCompleteSearchViewController.swift */; };
 		FB7E6632238F12AB00D67627 /* NthOrderStatistic.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7E6631238F12AB00D67627 /* NthOrderStatistic.swift */; };
 		FB7E6634238F3A2500D67627 /* MergeSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7E6633238F3A2500D67627 /* MergeSort.swift */; };
 		FB81C3ED239BD2EA005F80CF /* MinimumSwaps.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB81C3EC239BD2EA005F80CF /* MinimumSwaps.swift */; };
@@ -42,6 +44,8 @@
 
 /* Begin PBXFileReference section */
 		FB2D14282388744800F1DCC0 /* BinaryTree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinaryTree.swift; sourceTree = "<group>"; };
+		FB3D0ABA23B28C6F00BD9A87 /* AutoCompleteSearch.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AutoCompleteSearch.storyboard; sourceTree = "<group>"; };
+		FB3D0ABC23B28CA200BD9A87 /* AutoCompleteSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoCompleteSearchViewController.swift; sourceTree = "<group>"; };
 		FB7E6631238F12AB00D67627 /* NthOrderStatistic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NthOrderStatistic.swift; sourceTree = "<group>"; };
 		FB7E6633238F3A2500D67627 /* MergeSort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MergeSort.swift; sourceTree = "<group>"; };
 		FB81C3EC239BD2EA005F80CF /* MinimumSwaps.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinimumSwaps.swift; sourceTree = "<group>"; };
@@ -98,6 +102,15 @@
 			path = DataStructure;
 			sourceTree = "<group>";
 		};
+		FB3D0AB923B28C4400BD9A87 /* SystemDesign */ = {
+			isa = PBXGroup;
+			children = (
+				FB3D0ABA23B28C6F00BD9A87 /* AutoCompleteSearch.storyboard */,
+				FB3D0ABC23B28CA200BD9A87 /* AutoCompleteSearchViewController.swift */,
+			);
+			path = SystemDesign;
+			sourceTree = "<group>";
+		};
 		FB98BE7B238C93B600F3B173 /* Sorting */ = {
 			isa = PBXGroup;
 			children = (
@@ -129,6 +142,7 @@
 		FBF41C3F2376DA6100D2CA6A /* Algorithms-Swift */ = {
 			isa = PBXGroup;
 			children = (
+				FB3D0AB923B28C4400BD9A87 /* SystemDesign */,
 				FB98BE7B238C93B600F3B173 /* Sorting */,
 				FB2D14272388743800F1DCC0 /* DataStructure */,
 				FBF41C602376DA7100D2CA6A /* Challenges */,
@@ -246,6 +260,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB3D0ABB23B28C6F00BD9A87 /* AutoCompleteSearch.storyboard in Resources */,
 				FBF41C4B2376DA6200D2CA6A /* LaunchScreen.storyboard in Resources */,
 				FBF41C482376DA6200D2CA6A /* Assets.xcassets in Resources */,
 				FBF41C462376DA6100D2CA6A /* Main.storyboard in Resources */,
@@ -272,6 +287,7 @@
 				FBF41C432376DA6100D2CA6A /* ViewController.swift in Sources */,
 				FB2D14292388744800F1DCC0 /* BinaryTree.swift in Sources */,
 				FBF41C412376DA6100D2CA6A /* AppDelegate.swift in Sources */,
+				FB3D0ABD23B28CA200BD9A87 /* AutoCompleteSearchViewController.swift in Sources */,
 				FB81C3EF239D93B0005F80CF /* AddTwoNumbers.swift in Sources */,
 				FBFEFE5D238DF42200AE096F /* Graph.swift in Sources */,
 				FB81C3ED239BD2EA005F80CF /* MinimumSwaps.swift in Sources */,

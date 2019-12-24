@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="H3v-fD-yMM">
+            <objects>
+                <viewController id="rfL-2w-2OT" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="UHO-6a-wPF">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Find It" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NH2-1t-uKw">
+                                <rect key="frame" x="163" y="384" width="89" height="39"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="32"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="MWd-Zg-IiF">
+                                <rect key="frame" x="16" y="436" width="382" height="34"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bUS-yS-Pf6">
+                                        <rect key="frame" x="0.0" y="0.0" width="326" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VDl-AQ-KLh">
+                                        <rect key="frame" x="336" y="0.0" width="46" height="34"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="34" id="OI6-Vr-jIK"/>
+                                            <constraint firstAttribute="width" constant="46" id="lCY-aV-Fbb"/>
+                                        </constraints>
+                                        <state key="normal" title="S"/>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="MWd-Zg-IiF" firstAttribute="leading" secondItem="Zj0-xP-nGu" secondAttribute="leading" constant="16" id="hOC-ts-miA"/>
+                            <constraint firstItem="Zj0-xP-nGu" firstAttribute="trailing" secondItem="MWd-Zg-IiF" secondAttribute="trailing" constant="16" id="pkc-M2-fPd"/>
+                            <constraint firstItem="bUS-yS-Pf6" firstAttribute="top" secondItem="NH2-1t-uKw" secondAttribute="bottom" constant="13" id="scs-Nc-mM1"/>
+                            <constraint firstItem="NH2-1t-uKw" firstAttribute="centerX" secondItem="Zj0-xP-nGu" secondAttribute="centerX" id="umq-9Q-iFu"/>
+                            <constraint firstItem="MWd-Zg-IiF" firstAttribute="centerY" secondItem="Zj0-xP-nGu" secondAttribute="centerY" id="xBD-G8-lQa"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Zj0-xP-nGu"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="W0L-2S-2Sw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-739.13043478260875" y="-38.169642857142854"/>
+        </scene>
+    </scenes>
+</document>
