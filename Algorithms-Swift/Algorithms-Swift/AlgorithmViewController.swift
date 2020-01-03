@@ -9,21 +9,20 @@
 import UIKit
 
 class AlgorithmViewController: UIViewController {
-    var algorithmCode: (() -> Void)?
-    var algorithmName: String?
+    var algorithm: Algorithm?
 
     @IBOutlet weak var executeButton: UIButton! {
         didSet {
-            executeButton.isHidden = algorithmCode == nil
+//            executeButton.isHidden = algorithm.cod == nil
         }
     }
     @IBOutlet weak var algorithmNameLabel: UILabel! {
         didSet {
-            algorithmNameLabel.text = algorithmName
+//            algorithmNameLabel.text = algorithmName
         }
     }
     
     @IBAction func executeButtonTapped(_ sender: Any) {
-        algorithmCode?()
+//        algorithmCode?()
     }
 }
