@@ -48,13 +48,14 @@ class LRUCache {
     
     func get(_ key: Int) -> Int {
         if let value = items[key] {
+            items[key] = (value.0, Date())
             return value.0
         }
         return -1
     }
     
     func put(_ key: Int, _ value: Int) {
-        if items.count <= capacity {
+        if items.count >= capacity && get(key) == -1 {
             let oldestKey = getOldestKey()
             items[oldestKey] = nil
         }
@@ -73,6 +74,7 @@ class LRUCache {
         return keyToReturn
     }
 }
+
 
 /**
  * Your LRUCache object will be instantiated and called as such:
