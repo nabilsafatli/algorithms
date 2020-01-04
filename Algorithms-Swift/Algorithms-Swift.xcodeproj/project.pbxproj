@@ -11,6 +11,7 @@
 		FB3D0ABB23B28C6F00BD9A87 /* AutoCompleteSearch.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB3D0ABA23B28C6F00BD9A87 /* AutoCompleteSearch.storyboard */; };
 		FB3D0ABD23B28CA200BD9A87 /* AutoCompleteSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB3D0ABC23B28CA200BD9A87 /* AutoCompleteSearchViewController.swift */; };
 		FB5FD62F23BFF03300B756F7 /* LRUCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5FD62E23BFF03300B756F7 /* LRUCache.swift */; };
+		FB5FD63123C13BFA00B756F7 /* DeleteNodesForest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5FD63023C13BFA00B756F7 /* DeleteNodesForest.swift */; };
 		FB7E6632238F12AB00D67627 /* NthOrderStatistic.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7E6631238F12AB00D67627 /* NthOrderStatistic.swift */; };
 		FB7E6634238F3A2500D67627 /* MergeSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7E6633238F3A2500D67627 /* MergeSort.swift */; };
 		FB81C3ED239BD2EA005F80CF /* MinimumSwaps.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB81C3EC239BD2EA005F80CF /* MinimumSwaps.swift */; };
@@ -49,6 +50,7 @@
 		FB3D0ABA23B28C6F00BD9A87 /* AutoCompleteSearch.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AutoCompleteSearch.storyboard; sourceTree = "<group>"; };
 		FB3D0ABC23B28CA200BD9A87 /* AutoCompleteSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoCompleteSearchViewController.swift; sourceTree = "<group>"; };
 		FB5FD62E23BFF03300B756F7 /* LRUCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LRUCache.swift; sourceTree = "<group>"; };
+		FB5FD63023C13BFA00B756F7 /* DeleteNodesForest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteNodesForest.swift; sourceTree = "<group>"; };
 		FB7E6631238F12AB00D67627 /* NthOrderStatistic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NthOrderStatistic.swift; sourceTree = "<group>"; };
 		FB7E6633238F3A2500D67627 /* MergeSort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MergeSort.swift; sourceTree = "<group>"; };
 		FB81C3EC239BD2EA005F80CF /* MinimumSwaps.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinimumSwaps.swift; sourceTree = "<group>"; };
@@ -189,6 +191,7 @@
 				FB81C3EC239BD2EA005F80CF /* MinimumSwaps.swift */,
 				FB81C3EE239D93B0005F80CF /* AddTwoNumbers.swift */,
 				FB5FD62E23BFF03300B756F7 /* LRUCache.swift */,
+				FB5FD63023C13BFA00B756F7 /* DeleteNodesForest.swift */,
 			);
 			path = Challenges;
 			sourceTree = "<group>";
@@ -295,6 +298,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB5FD63123C13BFA00B756F7 /* DeleteNodesForest.swift in Sources */,
 				FB7E6632238F12AB00D67627 /* NthOrderStatistic.swift in Sources */,
 				FBD06FD023B652B20015A637 /* Algorithm.swift in Sources */,
 				FBF41C642376DB1E00D2CA6A /* BinarySearch.swift in Sources */,
