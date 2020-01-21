@@ -17,6 +17,12 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         return [sortingAlgorithmsTitles, dataStructuresTitles, challengesTitles]
     }
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+
+        SingleNumber2.execute()
+    }
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return algorithmsGroups[section].count
     }

@@ -26,7 +26,22 @@
 import Foundation
 
 class SingleNumber2 {
-    func findSingleNumber(from numbers: [Int]) -> Int {
-        return 0
+    static func findSingleNumber(from numbers: [Int]) -> Int {
+        var myNumber = numbers[0]
+        var existingNumber = Set<Int>()
+        for number in numbers {
+            if !existingNumber.contains(number) {
+                existingNumber.insert(number)
+                myNumber = number
+            }
+        }
+
+        return myNumber
+    }
+    
+    static func execute() {
+        let myNumbers = [1,2,3,4,5,6,7,8,9,1,2,3,4,5,6,7,8,1,2,3,4,5,6,7,8]
+        let singleNumber = findSingleNumber(from: myNumbers)
+        print("The single number in the array is \(singleNumber)")
     }
 }
