@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		FB2D14292388744800F1DCC0 /* BinaryTree.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2D14282388744800F1DCC0 /* BinaryTree.swift */; };
 		FB316D8F23D79185001C086D /* SingleNumber2.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB316D8E23D79185001C086D /* SingleNumber2.swift */; };
+		FB316D9123D79D2B001C086D /* LongestSubstring.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB316D9023D79D2B001C086D /* LongestSubstring.swift */; };
 		FB3D0ABB23B28C6F00BD9A87 /* AutoCompleteSearch.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB3D0ABA23B28C6F00BD9A87 /* AutoCompleteSearch.storyboard */; };
 		FB3D0ABD23B28CA200BD9A87 /* AutoCompleteSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB3D0ABC23B28CA200BD9A87 /* AutoCompleteSearchViewController.swift */; };
 		FB5FD62F23BFF03300B756F7 /* LRUCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5FD62E23BFF03300B756F7 /* LRUCache.swift */; };
@@ -49,6 +50,7 @@
 /* Begin PBXFileReference section */
 		FB2D14282388744800F1DCC0 /* BinaryTree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinaryTree.swift; sourceTree = "<group>"; };
 		FB316D8E23D79185001C086D /* SingleNumber2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleNumber2.swift; sourceTree = "<group>"; };
+		FB316D9023D79D2B001C086D /* LongestSubstring.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LongestSubstring.swift; sourceTree = "<group>"; };
 		FB3D0ABA23B28C6F00BD9A87 /* AutoCompleteSearch.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AutoCompleteSearch.storyboard; sourceTree = "<group>"; };
 		FB3D0ABC23B28CA200BD9A87 /* AutoCompleteSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoCompleteSearchViewController.swift; sourceTree = "<group>"; };
 		FB5FD62E23BFF03300B756F7 /* LRUCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LRUCache.swift; sourceTree = "<group>"; };
@@ -195,6 +197,7 @@
 				FB5FD62E23BFF03300B756F7 /* LRUCache.swift */,
 				FB5FD63023C13BFA00B756F7 /* DeleteNodesForest.swift */,
 				FB316D8E23D79185001C086D /* SingleNumber2.swift */,
+				FB316D9023D79D2B001C086D /* LongestSubstring.swift */,
 			);
 			path = Challenges;
 			sourceTree = "<group>";
@@ -319,6 +322,7 @@
 				FBF41C622376DA9300D2CA6A /* TwoSum.swift in Sources */,
 				FBDC290723970C9F00FC6DB9 /* Queue.swift in Sources */,
 				FB316D8F23D79185001C086D /* SingleNumber2.swift in Sources */,
+				FB316D9123D79D2B001C086D /* LongestSubstring.swift in Sources */,
 				FBB66A352389C6A300308D1C /* RotateLeftArray.swift in Sources */,
 				FBFEFE5B238DCE9100AE096F /* AlgorithmViewController.swift in Sources */,
 				FBF7D8212395B3F700345B5A /* LinkedList.swift in Sources */,
