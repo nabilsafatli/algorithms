@@ -36,13 +36,28 @@ import Foundation
 
 class LongestSubstring {
     static func execute() {
-        let string = "pwwkew"
+        let string = "dvdf"
         let lenght = lengthOfLongestSubstring(string)
         print("The lenght of longest substring is \(lenght)")
     }
 
     static func lengthOfLongestSubstring(_ s: String) -> Int {
-        
-        return 0
+        guard s.count > 0 else {
+            return 0
+        }
+        var longestSize: Int?
+        var charactersWithoutRepetition = [Character: Int]()
+        for (i, character) in s.enumerated() {
+            if let characterIndex = charactersWithoutRepetition[character] {
+                let finalIndex = s.index(s.endIndex, offsetBy: -(s.count - characterIndex))
+                return lengthOfLongestSubstring(s[finalIndex...])
+            } else {
+                charactersWithoutRepetition[character] = i
+                if charactersWithoutRepetition.count > longestSize ?? 0 {
+                    longestSize = charactersWithoutRepetition.count
+                }
+            }
+        }
+        return longestSize ?? charactersWithoutRepetition.count
     }
 }
