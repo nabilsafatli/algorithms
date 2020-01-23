@@ -1,0 +1,21 @@
+//
+//  MaxContiguousSubarraySum.swift
+//  Algorithms-Swift
+//
+//  Created by Nabil Safatli on 2020-01-23.
+//  Copyright © 2020 Nabil. All rights reserved.
+//
+
+import Foundation
+
+class MaxContiguousSubarraySum {
+    static func execute() {
+        let numbers = [-2, 1, -3, 4, -1, 2, 1, -5, 4]
+        let result = maxContigousSum(in: numbers)
+        print("Result is \(result)")
+    }
+
+    static func maxContigousSum(in array:[Int]) -> Int {
+        return 0
+    }
+}
