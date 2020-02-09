@@ -16,6 +16,20 @@ class MaxContiguousSubarraySum {
     }
 
     static func maxContigousSum(in array:[Int]) -> Int {
-        return 0
+        var i  = 0
+        var maxSum = 0
+
+        while i < array.count {
+            var currentSum = 0
+            for j in i..<array.count {
+                currentSum += array[j]
+                if currentSum > maxSum {
+                    maxSum = currentSum
+                }
+            }
+            i += 1
+        }
+
+        return maxSum
     }
 }
